@@ -1,0 +1,1 @@
+export const EMPLOYEE_ID_SESSION_KEY = 'employeeId'
