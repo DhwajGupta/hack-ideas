@@ -1,13 +1,15 @@
 import React from 'react'
+
 import Card from '@material-ui/core/Card'
 import CardHeader from '@material-ui/core/CardHeader'
 import CardContent from '@material-ui/core/CardContent'
 import Typography from '@material-ui/core/Typography'
 import FavoriteIcon from '@material-ui/icons/Favorite'
 import Box from '@material-ui/core/Box'
-import useStyles from './ChallengeCard.styles'
 import Chip from '@material-ui/core/Chip'
 import Tooltip from '@material-ui/core/Tooltip'
+
+import useStyles from './ChallengeCard.styles'
 
 export default function ChallengeCard(props) {
   const { challenge, handleUpvote } = props

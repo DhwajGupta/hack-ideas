@@ -1,9 +1,11 @@
 import React from 'react'
+
 import AppBar from '@material-ui/core/AppBar'
 import Toolbar from '@material-ui/core/Toolbar'
 import Button from '@material-ui/core/Button'
+import Typography from '@material-ui/core/Typography'
+
 import useStyles from './AppHeader.styles'
-import { Typography } from '@material-ui/core'
 
 const AppHeader = (props) => {
   const { onLogout } = props

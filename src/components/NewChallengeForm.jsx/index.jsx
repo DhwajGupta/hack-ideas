@@ -1,4 +1,5 @@
 import React from 'react'
+
 import Checkbox from '@material-ui/core/Checkbox'
 import ListItemText from '@material-ui/core/ListItemText'
 import Input from '@material-ui/core/Input'
@@ -6,6 +7,7 @@ import FormControl from '@material-ui/core/FormControl'
 import InputLabel from '@material-ui/core/InputLabel'
 import MenuItem from '@material-ui/core/MenuItem'
 import Select from '@material-ui/core/Select'
+
 import InputField from '../../components/common/InputField'
 import validTags from '../../data/validTags'
 

@@ -1,14 +1,16 @@
 import React, { useEffect } from 'react'
+import { useHistory } from 'react-router'
+import { toast } from 'react-toastify'
+import { useDispatch, useSelector } from 'react-redux'
+
 import CssBaseline from '@material-ui/core/CssBaseline'
 import Toolbar from '@material-ui/core/Toolbar'
+
 import useStyles from './Home.styles'
 import ChallengesList from '../ChallengesList'
 import Sidemenu from '../../components/Sidemenu'
 import AppHeader from '../../components/AppHeader'
-import { useHistory } from 'react-router'
-import { useDispatch, useSelector } from 'react-redux'
 import { logout } from '../../redux/slices/auth'
-import { toast } from 'react-toastify'
 import { EMPLOYEE_ID_SESSION_KEY } from '../../constants'
 
 export default function ClippedDrawer() {

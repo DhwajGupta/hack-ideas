@@ -1,4 +1,5 @@
 import { createSlice } from '@reduxjs/toolkit'
+
 import { EMPLOYEE_ID_SESSION_KEY } from '../../constants'
 
 const initialState = {

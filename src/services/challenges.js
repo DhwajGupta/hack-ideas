@@ -1,6 +1,7 @@
 import { toast } from 'react-toastify'
-import { firestore } from '../config/firebase'
 import { getDocs, collection, query, orderBy, limit, Timestamp, increment } from 'firebase/firestore'
+
+import { firestore } from '../config/firebase'
 import { CHALLENGES_COLLECTION } from '../constants'
 
 const perPage = process.env.REACT_APP_PER_PAGE

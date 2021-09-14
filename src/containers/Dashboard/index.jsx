@@ -1,11 +1,13 @@
 import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
+import { useHistory } from 'react-router'
+
 import CssBaseline from '@material-ui/core/CssBaseline'
 import Grid from '@material-ui/core/Grid'
 import Typography from '@material-ui/core/Typography'
+
 import useStyles from './Dashboard.styles'
 import Login from '../../components/Login'
-import { useHistory } from 'react-router'
 import { login } from '../../redux/slices/auth'
 
 export default function Dashboard() {

@@ -1,6 +1,7 @@
 import { toast } from 'react-toastify'
-import { firestore } from '../config/firebase'
 import { collection, getDocs, query, where } from 'firebase/firestore'
+
+import { firestore } from '../config/firebase'
 import { EMPLOYEE_COLLECTION, EMPLOYEE_ID_SESSION_KEY } from '../constants'
 
 export const requestEmployeVerify = async (data) => {

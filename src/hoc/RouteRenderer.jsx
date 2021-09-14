@@ -1,5 +1,6 @@
 import React from 'react'
 import { Redirect, Route } from 'react-router-dom'
+
 import { EMPLOYEE_ID_SESSION_KEY } from '../constants'
 
 const RouteRenderer = (props) => {

@@ -1,9 +1,11 @@
 import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-import useStyles from './ChallengesList.styles'
+
+import Grid from '@material-ui/core/Grid'
+
 import ChallengeCard from '../../components/ChallengeCard'
 import SkeletonCard from '../../components/common/Skeleton'
-import Grid from '@material-ui/core/Grid'
+import useStyles from './ChallengesList.styles'
 import { getChallenges, updateChallenge } from '../../redux/slices/challenges'
 
 const ChallengesList = () => {

@@ -1,4 +1,7 @@
 import React, { useState, useEffect } from 'react'
+import { useSelector, useDispatch } from 'react-redux'
+import { toast } from 'react-toastify'
+
 import Button from '@material-ui/core/Button'
 import Dialog from '@material-ui/core/Dialog'
 import IconButton from '@material-ui/core/IconButton'
@@ -9,11 +12,10 @@ import Toolbar from '@material-ui/core/Toolbar'
 import DialogActions from '@material-ui/core/DialogActions'
 import DialogContent from '@material-ui/core/DialogContent'
 import AddIcon from '@material-ui/icons/Add'
+
 import useStyles from './NewChallenge.styles'
-import { useSelector, useDispatch } from 'react-redux'
 import NewChallengeForm from '../../components/NewChallengeForm.jsx'
 import { addChallenge } from '../../redux/slices/challenges'
-import { toast } from 'react-toastify'
 
 const initialFormValues = {
   title: '',

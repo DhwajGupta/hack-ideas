@@ -1,10 +1,12 @@
 import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-import useStyles from './SortByFilter.styles'
+
 import MenuItem from '@material-ui/core/MenuItem'
 import FormControl from '@material-ui/core/FormControl'
 import Select from '@material-ui/core/Select'
 import Button from '@material-ui/core/Button'
+
+import useStyles from './SortByFilter.styles'
 import { setOrderByField } from '../../redux/slices/challenges'
 import { ORDER_BY } from '../../constants'
 
