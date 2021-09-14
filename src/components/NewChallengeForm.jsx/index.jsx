@@ -48,7 +48,7 @@ const NewChallengeForm = (props) => {
           handleChange={handleChange}
           multiline
           error={errors.description}
-          maxLength={50}
+          maxLength={100}
         />
       </FormControl>
       <FormControl className={classes.formControl}>
