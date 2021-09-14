@@ -27,7 +27,8 @@ function* addChallengeWorker(action) {
   try {
     const formData = action?.payload || {}
     yield addNewChallenge(formData)
-    yield put(getChallenges(1))
+    const orderByField = localStorage.getItem(ORDER_BY)
+    yield put(getChallenges({ page: 1, orderByField }))
   } catch (e) {
     yield put(setError((e)))
   }
