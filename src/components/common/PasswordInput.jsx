@@ -62,7 +62,6 @@ const PasswordInput = (props) => {
         labelWidth={70}
         endAdornment={<EndAdornment />}
         error={!!error}
-        helperText={error}
         inputProps={{ maxLength: maxLength }}
       />
       <FormHelperText className={classes.helperText}>{error}</FormHelperText>
