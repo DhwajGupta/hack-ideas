@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import useStyles from './SortByFilter.styles'
 import MenuItem from '@material-ui/core/MenuItem'
@@ -16,7 +16,6 @@ export default function ControlledOpenSelect() {
 
   const handleChange = (event) => {
     const { target: { value } } = event
-    localStorage.setItem(ORDER_BY, value)
     dispatch(setOrderByField(value))
   }
 
@@ -27,6 +26,10 @@ export default function ControlledOpenSelect() {
   const handleOpen = () => {
     setOpen(true)
   }
+
+  useEffect(() => {
+    localStorage.setItem(ORDER_BY, orderByField)
+  }, [orderByField])
 
   return (
     <div>
