@@ -6,6 +6,7 @@ import FormControl from '@material-ui/core/FormControl'
 import Select from '@material-ui/core/Select'
 import Button from '@material-ui/core/Button'
 import { setOrderByField } from '../../redux/slices/challenges'
+import { ORDER_BY } from '../../constants'
 
 export default function ControlledOpenSelect() {
   const classes = useStyles()
@@ -15,6 +16,7 @@ export default function ControlledOpenSelect() {
 
   const handleChange = (event) => {
     const { target: { value } } = event
+    localStorage.setItem(ORDER_BY, value)
     dispatch(setOrderByField(value))
   }
 

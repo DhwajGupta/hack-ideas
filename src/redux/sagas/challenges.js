@@ -1,6 +1,7 @@
-import { put, takeLatest, select } from 'redux-saga/effects'
+import { put, takeLatest } from 'redux-saga/effects'
 import { addNewChallenge, toggleUpvoteChallenge, getExistingChallenges } from '../../services/challenges'
 import { getChallenges, setChallenges, addChallenge, updateChallenge, setError } from '../slices/challenges'
+import { ORDER_BY } from '../../constants'
 
 function* challengeWatcher() {
   yield takeLatest(getChallenges.type, getChallengesWorker)
@@ -35,7 +36,8 @@ function* updateChallengeWorker(action) {
   try {
     const { challengeId, isIncrement} = action?.payload || {}
     yield toggleUpvoteChallenge(challengeId, isIncrement)
-    yield put(getChallenges())
+    const orderByField = localStorage.getItem(ORDER_BY)
+    yield put(getChallenges({ page: 1, orderByField }))
   } catch (e) {
     yield put(setError((e)))
   }
