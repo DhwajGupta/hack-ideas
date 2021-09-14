@@ -18,7 +18,7 @@ const AppHeader = (props) => {
           </Button>
         </Typography>
         <Typography align='right' className={classes.logout}>
-          <Button onClick={onLogout}>
+          <Button onClick={onLogout} className={classes.white}>
             Logout
           </Button>
         </Typography>

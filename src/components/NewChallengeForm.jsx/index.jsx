@@ -35,7 +35,7 @@ const NewChallengeForm = (props) => {
           handleChange={handleChange}
           autoFocus
           error={errors.title}
-          maxLength={20}
+          maxLength={25}
         />
       </FormControl>
       <FormControl className={classes.formControl}>
@@ -48,7 +48,7 @@ const NewChallengeForm = (props) => {
           handleChange={handleChange}
           multiline
           error={errors.description}
-          maxLength={30}
+          maxLength={50}
         />
       </FormControl>
       <FormControl className={classes.formControl}>

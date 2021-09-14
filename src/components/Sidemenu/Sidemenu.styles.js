@@ -9,6 +9,8 @@ export default makeStyles((theme) => ({
   },
   drawerPaper: {
     width: drawerWidth,
+    backgroundColor: '#F3F7F7',
+    height: '100%',
   },
   drawerContainer: {
     overflow: 'auto',
